@@ -1,0 +1,179 @@
+{% extends './basic.html' %}
+{% load static %}
+{% block title %}| Temp {% endblock %}
+
+ {% block head %}
+
+
+{% endblock %}
+
+{% block style %}
+    <style>
+div#content {
+    /* width: 705.3px; */
+    margin-right: 56px;
+    margin-left: 56px;
+}
+    </style>
+
+
+{% endblock %}
+
+{% block search %}
+
+    <div class="breadcome-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="breadcome-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="breadcome-heading">
+                                    <form role="search" class="sr-input-func">
+                                        <input type="text" placeholder="Search..." class="search-int form-control">
+                                        <a href="#"><i class="fa fa-search"></i></a>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <ul class="breadcome-menu">
+                                    <li><a href="#">Home</a> <span class="bread-slash">/</span>
+                                    </li>
+                                    <li><span class="bread-blod">Dashboard V.1</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+{% endblock %}
+
+{% block body %}
+
+<div id="content" class="pmd-content inner-page admin">
+
+    <!-- Title -->
+    <h1 id="leave">Leave</h1>
+    <!-- End Title -->
+    <!--breadcrum start-->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb pmd-breadcrumb mb-0">
+            <li class="breadcrumb-item">
+                <a href="https://themes.propeller.in/bootstrap4/html/bootstrap4-admin-theme/dashboard.html">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Leave</li>
+        </ol>
+    </nav>
+    <!--breadcrum end-->
+
+    <section class="component-section" id="employee">
+        <table class="table pmd-table table-hover pmd-table-card">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Employee</th>
+                        <th>Leave Type</th>
+                        <th>Half Day</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Reason</th>
+                        <th>No of Leave</th>
+                        <th>Paid / Unpaid</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-title="Employee">Tarah L. Faulkner</td>
+                        <td data-title="Leave Type">Casual Leave</td>
+                        <td data-title="Half Day">No</td>
+                        <td data-title="Start Date">1<sup>st</sup> September, 2018</td>
+                        <td data-title="End Date">3<sup>rd</sup> September, 2018</td>
+                        <td data-title="Reason">Attend Cousin's Wedding</td>
+                        <td data-title="No of Leave">3</td>
+                        <td data-title="Paid / Unpaid">Paid</td>
+                        <td data-title="Status">Pending</td>
+                        <td data-title="">
+                            <a href="javascript:void(0);" title="Accept" class="pmd-btn-fab btn-xs btn-outline-secondary btn mr-2 pmd-ripple-effect">
+                                <i class="material-icons">done</i>
+                            </a>
+                            <a href="javascript:void(0);" title="Reject" class="pmd-btn-fab btn-xs btn-outline-danger btn pmd-ripple-effect" data-toggle="modal" data-target="#reject-modal">
+                                <i class="material-icons">close</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Employee">James L. Faulkner</td>
+                        <td data-title="Leave Type">Sick Leave</td>
+                        <td data-title="Half Day">No</td>
+                        <td data-title="Start Date">1<sup>st</sup> September, 2018</td>
+                        <td data-title="End Date">3<sup>rd</sup> September, 2018</td>
+                        <td data-title="Reason">Having Fever</td>
+                        <td data-title="No of Leave">3</td>
+                        <td data-title="Paid / Unpaid">Paid</td>
+                        <td data-title="Status">Approved</td>
+                        <td data-title=""></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Employee">Maria James</td>
+                        <td data-title="Leave Type">Casual Leave</td>
+                        <td data-title="Half Day">No</td>
+                        <td data-title="Start Date">1<sup>st</sup> November, 2018</td>
+                        <td data-title="End Date">3<sup>rd</sup> November, 2018</td>
+                        <td data-title="Reason">Vacation with Family</td>
+                        <td data-title="No of Leave">3</td>
+                        <td data-title="Paid / Unpaid">Paid</td>
+                        <td data-title="Status">Cancelled</td>
+                        <td data-title="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Employee">Julia Warne</td>
+                        <td data-title="Leave Type">Sick Leave</td>
+                        <td data-title="Half Day">Yes</td>
+                        <td data-title="Start Date">1<sup>st</sup> December, 2018</td>
+                        <td data-title="End Date">1<sup>st</sup> December, 2018</td>
+                        <td data-title="Reason">Not feeling well</td>
+                        <td data-title="No of Leave">0.5</td>
+                        <td data-title="Paid / Unpaid">Paid</td>
+                        <td data-title="Status">Pending</td>
+                        <td data-title="">
+                            <a href="javascript:void(0);" title="Accept" class="pmd-btn-fab btn-xs btn-outline-secondary btn mr-2 pmd-ripple-effect">
+                                <i class="material-icons">done</i>
+                            </a>
+                            <a href="javascript:void(0);" title="Reject" class="pmd-btn-fab btn-xs btn-outline-danger btn pmd-ripple-effect" data-toggle="modal" data-target="#reject-modal">
+                                <i class="material-icons">close</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Employee">James Jhonathan</td>
+                        <td data-title="Leave Type">Casual Leave</td>
+                        <td data-title="Half Day">No</td>
+                        <td data-title="Start Date">1<sup>st</sup> November, 2018</td>
+                        <td data-title="End Date">3<sup>rd</sup> November, 2018</td>
+                        <td data-title="Reason">Vacation with Family</td>
+                        <td data-title="No of Leave">3</td>
+                        <td data-title="Paid / Unpaid">Paid</td>
+                        <td data-title="Status">Unapproved</td>
+                        <td data-title="">
+                        </td>
+                    </tr>
+                </tbody>
+        </table>
+    </section>
+</div>
+
+
+{% endblock %}
+
+{% block js %}
+
+
+{% endblock %}
+
+
